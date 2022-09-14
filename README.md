@@ -1,6 +1,6 @@
 # Max’s BombParty Bot
 
-Automatically play acceptable words like a human in BombParty.
+Automatically play acceptable words in the online game BombParty! (www.JKLM.fun)
 
 ___
 
