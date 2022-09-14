@@ -6,18 +6,17 @@
 
 
 ## Installation
-1. Download the repository to a folder on your computer
-2. Install the following python packages by navigating to your command line and running
+1. Ensure you have the latest version of Google Chrome installed on your system
+2. Download the repository to a folder on your computer
+3. Install the following python packages by navigating to your command line and running
 ```
 pip3 install selenium
 pip3 install keyboard
 ```
-3. Launch `Maxs-Bomb-Party-Bot.py` with python3
-
+4. Launch `Maxs-Bomb-Party-Bot.py` with python3
 > If `ModuleNotFoundError: No module name 'example'`, navigate to your command line and run `pip3 install example`!
-
-4. Set up JKLM profile (Optional)
-5. Restart the program as necessary, engaging the bot by responding `y` to `Automate?`
+5. Set up JKLM profile (Optional)
+6. Restart the program as necessary, engaging the bot by responding `y` to `Automate?`
 > Secondarily, enable Instaplay by responding `y` to `Instaplay?`, although this is unrecommended.
 > 
 > Or launch "Learn Only" mode by responding `n` to `Automate?`.
