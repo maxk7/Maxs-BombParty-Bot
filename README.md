@@ -1,23 +1,29 @@
 # Max’s BombParty Bot
 
-Automatically play acceptable words in the online game BombParty! (www.JKLM.fun)
+> Automatically play acceptable words in the online game BombParty! (www.JKLM.fun) This bot comes preloaded with a dictionary of words, but it also learns new words too! This ensures the words it chooses to answer prompts are as natural as possible. 
 
-___
-# Installation
+(Enabling the Instaplay mode is conspicious and not recommended)
+
+
+## Installation
 1. Download the repository to a folder on your computer
 2. Install the following python packages by navigating to your command line and running
-  ```
-    pip3 install selenium
-    pip3 install keyboard
-  ```
+```
+pip3 install selenium
+pip3 install keyboard
+```
 3. Launch `Maxs-Bomb-Party-Bot.py` with python3
 
-If `ModuleNotFoundError: No module name 'example'`, navigate to your command line and run `pip3 install example`!
+> If `ModuleNotFoundError: No module name 'example'`, navigate to your command line and run `pip3 install example`!
 
 4. Set up JKLM profile (Optional)
+5. Restart the program as necessary, engaging the bot by responding `y` to `Automate?`
+> Secondarily, enable Instaplay by responding `y` to `Instaplay?`, although this is unrecommended.
+> 
+> Or launch "Learn Only" mode by responding `n` to `Automate?`.
 
 
-# Set Up JKLM Profile (Optional, Est. Time: 3 minutes)
+## Set Up JKLM Profile (Optional, Est. Time: 3 minutes)
 
 1. Launch `Maxs-Bomb-Party-Bot.py`
 2. Wait until www.JKLM.fun loads
