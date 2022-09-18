@@ -2,7 +2,7 @@
 
 > Automatically play acceptable words in the online game BombParty! (www.JKLM.fun) This bot comes preloaded with a dictionary of words, but it also learns new words too! This ensures the words it chooses to answer prompts are as natural as possible. 
 
-(Enabling the Instaplay mode is conspicious and not recommended)
+(Enabling the Instaplay mode is conspicuous and not recommended)
 
 
 ## Installation
