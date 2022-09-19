@@ -25,7 +25,7 @@ pip3 install keyboard
 > Or launch "Learn Only" mode by responding `n` to `Automate?`.
 
 
-## Set Up JKLM Profile (Optional, Est. Time: 3 minutes)
+## Set Up JKLM Profile (Optional, Est. Time: 5 minutes)
 
 1. Launch `Maxs-Bomb-Party-Bot.py`
 2. Wait until www.JKLM.fun loads
