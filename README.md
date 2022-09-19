@@ -1,7 +1,7 @@
 # Max’s BombParty Bot
 
 [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=clones&query=count&url=https://gist.githubusercontent.com/maxk7/558a689d4b778871d12f09f1504cb626/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
-![GitHub Issues](https://img.shields.io/github/issues/maxk7/Maxs-BombParty-Bot)
+![GitHub Issues](https://img.shields.io/github/issues/maxxk7/Maxs-BombParty-Bot)
 
 > Automatically play acceptable words in the online game BombParty! (www.JKLM.fun) This bot comes preloaded with a dictionary of words, but it also learns new words too! This ensures the words it chooses to answer prompts are as natural as possible. 
 
@@ -20,7 +20,7 @@ pip3 install keyboard
 > If `ModuleNotFoundError: No module name 'example'`, navigate to your command line and run `pip3 install example`!
 5. Set up JKLM profile (Optional)
 6. Restart the program as necessary, engaging the bot by responding `y` to `Automate?`
-> Secondarily, enable Instaplay by responding `y` to `Instaplay?`, although this is unrecommended.
+> Secondarily, enable Instaplay by responding `y` to `Instaplay?`, although this is not recommended.
 > 
 > Or launch "Learn Only" mode by responding `n` to `Automate?`.
 
