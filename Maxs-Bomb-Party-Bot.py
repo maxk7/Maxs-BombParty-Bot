@@ -4,6 +4,8 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import json
 import ast
@@ -17,12 +19,15 @@ import shutil
 import keyboard
 import math
 from sys import platform
+
+from webdriver_manager.chrome import ChromeDriverManager
+
 ###############
 #  S E T U P  #
 ###############
 
 word_file = open("words.txt", "r+")
-word_list: list[str] = word_file.read().split("\n")
+word_list = word_file.read().split("\n")
 word_file.close()
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
             "v", "w", "x", "y", "z"]
@@ -33,7 +38,7 @@ chrm_caps = webdriver.DesiredCapabilities.CHROME.copy()
 chrm_caps['goog:loggingPrefs'] = {'performance': 'ALL'}
 
 if platform == "linux" or platform == "linux2" or platform == "darwin":
-    driver = webdriver.Chrome(executable_path=f'{os.path.dirname(__file__)}/chromedriver', chrome_options=chrm_options,
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), chrome_options=chrm_options,
                               desired_capabilities=chrm_caps)
 elif platform == "win32":
     driver = webdriver.Chrome(executable_path=f'{os.path.dirname(__file__)}chromedriver.exe', chrome_options=chrm_options,
@@ -417,26 +422,31 @@ shutil.copy2(os.path.join(src_file), os.path.join(dest_file))
 
 connectDriver()
 
-profile_settings_file = open("profileSettings.txt", "r")
-profile_settings = profile_settings_file.read()
-profile_settings_file.close()
-
-print(profile_settings)
+# Attempt to set up user profile
+try:
+    profile_settings_file = open("profileSettings.txt", "r")
+    profile_settings = profile_settings_file.read()
+    profile_settings_file.close()
+    set_profile = True
+except FileNotFoundError:
+    set_profile = False
+    print("profileSettings.txt not found in directory")
 
 while True:
-    if len(profile_settings) != 0:
-        try:
-            scriptArray = """localStorage.setItem("jklmSettings", '""" + profile_settings + """');
-                            localStorage.setItem("jklmUserToken", 'Wz6vj8FYneZ8Z2hR');
-                            return Array.apply(0, new Array(localStorage.length)).map(function (o, i) { return localStorage.getItem(localStorage.key(i)); }
-                            )"""
+    if set_profile:
+        if len(profile_settings) != 0:
+            try:
+                scriptArray = """localStorage.setItem("jklmSettings", '""" + profile_settings + """');
+                                localStorage.setItem("jklmUserToken", 'Wz6vj8FYneZ8Z2hR');
+                                return Array.apply(0, new Array(localStorage.length)).map(function (o, i) { return localStorage.getItem(localStorage.key(i)); }
+                                )"""
 
-            result = driver.execute_script(scriptArray)
-            driver.refresh()
-            print("Loaded Profile!")
-            break
-        except:
-            pass
+                result = driver.execute_script(scriptArray)
+                driver.refresh()
+                print("Loaded Profile!")
+                break
+            except:
+                pass
     else:
         print("No Profile Loaded")
         break
