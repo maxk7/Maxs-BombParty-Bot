@@ -9,7 +9,7 @@
 
 ---
 
-![](https://github.com/maxk7/random/blob/main/Maxs%20BombParty%20Bot.gif)
+![Demo Gif](https://github.com/maxk7/random/blob/main/Maxs%20BombParty%20Bot.gif)
 
 
 ## Installation
