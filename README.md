@@ -7,6 +7,10 @@
 
 (Enabling the Instaplay mode is conspicuous and not recommended)
 
+---
+
+![](https://github.com/maxk7/random/blob/main/Maxs%20BombParty%20Bot.gif)
+
 
 ## Installation
 1. Ensure you have the latest version of Google Chrome installed on your system
